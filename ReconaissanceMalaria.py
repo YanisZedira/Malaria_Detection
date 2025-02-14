@@ -9,7 +9,7 @@ import gdown
 
 st.set_page_config(
     page_title="Détection de la Malaria",
-    page_icon="🦟",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
 )
