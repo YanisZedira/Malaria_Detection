@@ -88,7 +88,7 @@ def load_cnn_model():
     model_path = "CNN_best.keras"
 
     if not os.path.exists(model_path):
-        st.write("📥 Téléchargement du modèle depuis Google Drive...")
+        st.write("")
         url = 'https://drive.google.com/uc?id=1S-_M7q4LfaOpqPaHnNfCxCI7ypnYX8Nd'
         gdown.download(url, model_path, quiet=False)
 
