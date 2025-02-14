@@ -5,10 +5,11 @@ import numpy as np
 from PIL import Image
 import os
 import random
+import gdown
 
 st.set_page_config(
     page_title="Détection de la Malaria",
-    page_icon="",
+    page_icon="🦟",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -80,9 +81,17 @@ if ms.themes["refreshed"] == False:
 
 st.sidebar.write(f"Mode actuel : **{ms.themes['current_theme'].capitalize()}**")
 
+
+# Téléchargement du modèle depuis Google Drive
 @st.cache_resource
 def load_cnn_model():
-    model_path = "models/CNN_best.keras"
+    model_path = "CNN_best.keras"
+
+    if not os.path.exists(model_path):
+        st.write("📥 Téléchargement du modèle depuis Google Drive...")
+        url = 'https://drive.google.com/uc?id=1S-_M7q4LfaOpqPaHnNfCxCI7ypnYX8Nd'
+        gdown.download(url, model_path, quiet=False)
+
     model = load_model(model_path)
     return model
 
