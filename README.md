@@ -57,17 +57,8 @@ Les meilleurs poids des modèles sont déjà entraînés et stockés dans le dos
 
 Les performances des modèles sont évaluées avec les métriques classiques :
 
-| Métrique  | Formule                                                                                         | Description |
-|-----------|--------------------------------------------------------------------------------------------------|-------------|
-| **Accuracy (Exactitude)** | \( \frac{TP + TN}{TP + TN + FP + FN} \) | Proportion de prédictions correctes. |
-| **Precision (Précision)** | \( \frac{TP}{TP + FP} \) | Proportion des infections prédites qui sont réellement infectées. |
-| **Recall (Sensibilité)** | \( \frac{TP}{TP + FN} \) | Capacité à détecter toutes les cellules infectées. |
-| **F1-score** | \( 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \) | Moyenne harmonique entre précision et rappel. |
+![image](https://github.com/user-attachments/assets/e3af42f2-c605-4f62-913c-ca1a568fe7d1)
 
-\( TP \) : Vrais positifs  
-\( TN \) : Vrais négatifs  
-\( FP \) : Faux positifs  
-\( FN \) : Faux négatifs
 
 ---
 
@@ -110,6 +101,11 @@ L’architecture est optimisée spécifiquement pour les images microscopiques d
 *
 
 ---
+
+<img width="286" alt="Capture d’écran 2025-02-14 113342" src="https://github.com/user-attachments/assets/08344638-420f-434f-9ef2-32a3f9eba842" />
+<img width="430" alt="Capture d’écran 2025-02-14 113422" src="https://github.com/user-attachments/assets/ea83bd13-6ee9-4f56-b7b0-506b7f779a22" />
+<img width="263" alt="Capture d’écran 2025-02-14 113520" src="https://github.com/user-attachments/assets/fbfec180-ce64-43b7-81ab-1ac772c56074" />
+
 
 ## 🛠️ Développements Futurs
 
