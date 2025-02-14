@@ -1,5 +1,5 @@
 
-```
+
 Lien de l'application via streamlit : https://malariadetection-yaniszedira.streamlit.app/
 
 # Détection Automatisée de la Malaria
